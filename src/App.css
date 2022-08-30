@@ -1,3 +1,8 @@
+body {
+  font-family: "Asap", sans-serif;
+  font-family: "Barlow", sans-serif;
+  font-family: "Montserrat", sans-serif;
+}
 .App {
   text-align: center;
 }
@@ -26,6 +31,41 @@
 
 .App-link {
   color: #61dafb;
+}
+.linea {
+  margin: 0;
+  padding: 0;
+  height: 0.5px;
+}
+.nav-logo {
+  height: 65px;
+  width: 65px;
+}
+.nav-container {
+  margin: 0;
+  padding: 0;
+  background-color: #282c34;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.nav-items {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding-left: 2rem;
+}
+
+.nav-a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-a :hover {
+  border-bottom: 1px solid #61dafb;
+  color: #61dafb;
+  transition: all 0.2s;
 }
 
 @keyframes App-logo-spin {
