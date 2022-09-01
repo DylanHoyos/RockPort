@@ -28,6 +28,14 @@ body {
   font-size: calc(10px + 2vmin);
   color: white;
 }
+.greeting {
+  color: white;
+  border-bottom: 3px solid #1966ff;
+  transition: all 1s ease-in-out;
+}
+.greeting:hover {
+  border-bottom: 3px solid #ff1971;
+}
 
 .App-link {
   color: #61dafb;
@@ -44,7 +52,7 @@ body {
 .nav-container {
   margin: 0;
   padding: 0;
-  background-color: #282c34;
+  background-color: #1966ff;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;

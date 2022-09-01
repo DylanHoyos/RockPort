@@ -1,11 +1,11 @@
-import logo from '../logo.svg'
+
+import CartWidget from '../CartWidget/CartWidget'
 const Navbar = () => {
     return (
         <div >
             <ul className="nav-container">
-                <li className="nav-items">
-                    <img src={logo} className="nav-logo" />
-                </li>
+                <CartWidget />
+
                 <li className="nav-items">
                     <a href='#' className='nav-a' > <span>RockPort</span></a>
                 </li>
@@ -15,6 +15,8 @@ const Navbar = () => {
                 <li className="nav-items">
                     <a href='#' className='nav-a'><span>Catalogo</span></a>
                 </li>
+
+
 
 
             </ul>
