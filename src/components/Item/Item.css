@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  /* background-color: #424651; */
+  box-shadow: 0px 0px 15px #1e2128;
+  margin: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 450px;
+  height: 550px;
+  transition: all 0.3s;
+}
+.container:hover {
+  box-shadow: -8px 7px 10px #464a52;
+  margin: 2rem;
+  width: 460px;
+  height: 560px;
+}
+.container img {
+  width: 450px;
+}
+.container-titulo {
+  padding-bottom: 30px;
+  font-size: 45px;
+}
+.container-precio {
+  font-size: 30px;
+}
+.buttons {
+  background-color: rgb(66, 66, 255);
+  color: white;
+  border: none;
+  width: 150px;
+  height: 50px;
+  margin: 1rem;
+  padding: 8px;
+  border-radius: 10px;
+  transition: all 1s;
+}
+.buttons:hover {
+  background-color: white;
+  color: rgb(66, 66, 255);
+  border: solid 0.5px rgb(66, 66, 255);
+}

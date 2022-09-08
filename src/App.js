@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import './components/ItemCount/ItemCount.css';
+import './components/Item/Item.css'
 
 import './components/Navbar/Navbar.js'
 import Navbar from './components/Navbar/Navbar.js';
@@ -14,7 +15,7 @@ function App() {
     <div className="App">
       <Navbar />
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        {/* <img src={logo} className="App-logo" alt="logo" /> */}
         <ItemListContainer greeting='Hola Usuario, buenas tardes' stock="3" />
 
 
