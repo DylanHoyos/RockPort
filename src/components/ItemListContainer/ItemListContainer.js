@@ -4,9 +4,9 @@ import data from '../MockData'
 import ItemList from '../ItemList/ItemList'
 
 
-const ItemListContainer = ({ greeting, stock }) => {
+const ItemListContainer = ({ }) => {
     const [autos, setAutos] = useState([]);
-    const [validacion, setValidacion] = useState(0);
+
 
     useEffect(() => {
         traeProductos.then((response) => {
@@ -21,7 +21,9 @@ const ItemListContainer = ({ greeting, stock }) => {
         }, 2000);
     })
 
-
+    const onAdd = (cantidad) => {
+        console.log(`se ejecuto OnAdd, compro ${cantidad} producto`);
+    }
 
 
 
@@ -31,7 +33,7 @@ const ItemListContainer = ({ greeting, stock }) => {
             {/* <h1 className="greeting">{greeting}</h1> */}
             <ItemList catalogo={autos} />
 
-            {validacion > stock ? (null) : <ItemCount stock={validacion} setStock={setValidacion} />}
+            <ItemCount initial={1} stock={5} onAdd={onAdd} />
 
         </div>
     )

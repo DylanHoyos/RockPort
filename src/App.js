@@ -16,7 +16,7 @@ function App() {
       <Navbar />
       <header className="App-header">
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
-        <ItemListContainer greeting='Hola Usuario, buenas tardes' stock="3" />
+        <ItemListContainer />
 
 
 
