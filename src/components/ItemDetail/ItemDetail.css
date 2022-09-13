@@ -1,0 +1,29 @@
+.containerdet {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+  background-color: rgb(168, 0, 0);
+  border-radius: 30px;
+}
+.containerdet img {
+  border-radius: 10px;
+  width: 850px;
+  box-shadow: 5px 5px 15px black;
+}
+
+.container-detalle {
+  width: 750px;
+  height: 400px;
+  margin: 1rem;
+}
+.containerdet-titulo {
+  font-size: 50px;
+}
+.containerdet-precio {
+  font-size: 30px;
+}
+.containerdet-detalle {
+  font-size: 40px;
+}
