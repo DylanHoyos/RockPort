@@ -3,31 +3,30 @@ import './App.css';
 import './components/ItemCount/ItemCount.css';
 import './components/Item/Item.css'
 import './components/ItemDetail/ItemDetail.css'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import './components/Navbar/Navbar.js'
 import Navbar from './components/Navbar/Navbar.js';
-
-import ItemListContainer from './components/ItemListContainer/ItemListContainer.js';
-
-import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
+import ItemListContainer from './pages/ItemListContainer/ItemListContainer';
+import ItemDetailContainer from './pages/ItemDetailContainer/ItemDetailContainer';
 
 
 function App() {
   return (
-    <div className="App">
+
+    <BrowserRouter >
       <Navbar />
-      <header className="App-header">
-
-        <ItemListContainer />
-        <ItemDetailContainer />
-
-
+      <Routes>
+        <Route path='/' element={<ItemListContainer />} />
+        <Route path='categoria/:catID' element={<ItemListContainer />} />
+        <Route path='detalle/:id' element={<ItemDetailContainer />} />
 
 
+      </Routes>
 
-      </header>
+    </BrowserRouter>
 
-    </div>
+
   );
 }
 

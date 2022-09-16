@@ -1,13 +1,14 @@
 import Item from "../Item/Item";
 
 const ItemList = ({ catalogo }) => {
-    console.log(catalogo);
+    // console.log(catalogo);
     return (
         <>
             {
                 catalogo.map((car) =>
                 (<Item
                     key={car.id}
+                    id={car.id}
                     titulo={car.titulo}
                     precio={car.precio}
                     img={car.img}
