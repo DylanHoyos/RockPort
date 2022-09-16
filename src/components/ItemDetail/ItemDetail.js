@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+
 import './ItemDetail.css'
 
 
@@ -9,17 +9,31 @@ const ItemDetail = ({ info }) => {
     return (
         <div className='containerdet '>
 
+            <div className='containerdet-izq'>
+                <img src={info.img} alt={info.titulo} />
+                <p className='containerdet-precio'>{info.descripcion}</p>
 
-            <img src={info.img} alt='supra' />
+            </div>
+
             <div className='container-detalle'>
-                <h1 className='containerdet-titulo'>Modelo: {info.titulo}</h1>
-                <p className='containerdet-detalle'> Informacion: {info.detalle}</p>
+                <h1 className='containerdet-titulo'> {info.titulo}</h1>
+                <h3 className='containerdet-detalle'> Informacion: {info.detalle}</h3>
                 <p className='containerdet-precio'> Precio: ${info.precio}</p>
 
 
 
-                <button className='buttons'>Agregar al carrito</button>
+                <button className='boton-detalle'>Agregar al carrito</button>
+                <hr className='linea'></hr>
+
+                <div className='containerdet-footer'>
+                    <p className='containerdet-p'> Id: {info.id}</p>
+                    <p className='containerdet-p'>Marca: {info.marca}</p>
+
+
+
+                </div>
             </div>
+
 
         </div>
     )

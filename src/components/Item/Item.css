@@ -1,6 +1,7 @@
 .container {
   display: flex;
   /* background-color: #424651; */
+  background-color: rgb(190, 190, 190);
   box-shadow: 0px 0px 15px #1e2128;
   margin: 2rem;
   flex-direction: column;
@@ -9,9 +10,11 @@
   width: 450px;
   height: 550px;
   transition: all 0.3s;
+  border-radius: 10px;
 }
 .container:hover {
-  box-shadow: -8px 7px 10px #464a52;
+  box-shadow: -8px 7px 10px #545151;
+  background-color: #1e2128;
   margin: 2rem;
   width: 460px;
   height: 560px;
