@@ -7,6 +7,7 @@ import './components/Navbar/Navbar.js'
 import Navbar from './components/Navbar/Navbar.js';
 import ItemListContainer from './pages/ItemListContainer/ItemListContainer';
 import ItemDetailContainer from './pages/ItemDetailContainer/ItemDetailContainer';
+import CartWidget from './components/CartWidget/CartWidget';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route path='/' element={<ItemListContainer />} />
           <Route path='categoria/:catID' element={<ItemListContainer />} />
           <Route path='detalle/:id' element={<ItemDetailContainer />} />
+          <Route path='cart' element={<CartWidget />} />
 
 
         </Routes>

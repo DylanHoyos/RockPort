@@ -1,11 +1,19 @@
+import { useState } from "react"
 import React from 'react'
+import ItemCount from '../ItemCount/ItemCount'
 
 import './ItemDetail.css'
 
 
 const ItemDetail = ({ info }) => {
+    let initial = 1;
+    const [contador, setContador] = useState(initial);
 
-    // console.log(info);
+    const onAdd = (cantidad) => {
+        console.log(`se agrego al carrito, cantidad: ${cantidad}`);
+    }
+
+
     return (
         <div className='containerdet '>
 
@@ -20,9 +28,11 @@ const ItemDetail = ({ info }) => {
                 <h3 className='containerdet-detalle'> Informacion: {info.detalle}</h3>
                 <p className='containerdet-precio'> Precio: ${info.precio}</p>
 
+                <div className="container-detalle-count">
 
+                    <ItemCount initial={initial} stock={5} onAdd={onAdd} contador={contador} setContador={setContador} />
+                </div>
 
-                <button className='boton-detalle'>Agregar al carrito</button>
                 <hr className='linea'></hr>
 
                 <div className='containerdet-footer'>

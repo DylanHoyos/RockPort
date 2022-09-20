@@ -15,8 +15,8 @@ body {
 
   background-color: aliceblue;
   border-radius: 10px;
-  height: 800px;
-  width: 65%;
+  min-height: 800px;
+  min-width: 65%;
 }
 
 .containerdet img {

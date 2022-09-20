@@ -30,9 +30,7 @@ const ItemListContainer = () => {
 
 
 
-    const onAdd = (cantidad) => {
-        console.log(`se ejecuto OnAdd, compro ${cantidad} producto`);
-    }
+
 
 
 
@@ -42,7 +40,7 @@ const ItemListContainer = () => {
             {/* <h1 className="greeting">{greeting}</h1> */}
             <ItemList catalogo={autos} />
 
-            <ItemCount initial={1} stock={5} onAdd={onAdd} />
+
 
         </div>
     )

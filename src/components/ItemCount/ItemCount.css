@@ -1,14 +1,61 @@
 .buttons {
+  font-size: 20px;
   background-color: rgb(66, 66, 255);
   color: white;
   border: none;
   width: 150px;
   height: 25px;
-  margin: 1rem;
   border-radius: 10px;
   transition: all 1s;
 }
 .buttons:hover {
+  background-color: white;
+  color: rgb(66, 66, 255);
+  border: solid 0.5px rgb(66, 66, 255);
+}
+
+.conteiner-count {
+  max-height: 250px;
+}
+.conteiner-count-buttons {
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.conteiner-count-number {
+  font-size: 20px;
+  margin: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.conteiner-count-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+.button-link {
+  font-size: 20px;
+  color: white;
+  height: 40px;
+  padding: 6px;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  background-color: rgb(66, 66, 255);
+  border-radius: 10px;
+  transition: all 1s;
+}
+.button-link:hover {
   background-color: white;
   color: rgb(66, 66, 255);
   border: solid 0.5px rgb(66, 66, 255);
