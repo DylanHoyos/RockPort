@@ -5,6 +5,9 @@ const CartProvider = ({ children }) => {
     const addProduct = (info, cantidad) => {
         if (isInCart(info.id)) {
             alert('ya existe este producto')
+            setCart(cart.map(carro => {
+                return carro.id === info.id ? { ...carro, cantidad: carro.cantidad + cantidad } : carro
+            }))
 
         } else {
             setCart([...cart, { ...info, cantidad }])
@@ -21,8 +24,16 @@ const CartProvider = ({ children }) => {
         setCart(cart.filter(car => car.id !== id))
     }
 
+    const precioTotal = () => {
+        return (cart.reduce((acu, actual) => acu = acu + actual.precio * actual.cantidad, 0));
+
+    }
+    const totalAutos = () => {
+        return cart.reduce((acu, actual) => acu + actual.cantidad, 0)
+    }
+
     return (
-        <CartContext.Provider value={{ addProduct, clsCart, isInCart, removeProduct }}>
+        <CartContext.Provider value={{ addProduct, clsCart, isInCart, removeProduct, precioTotal, totalAutos, cart }}>
             {children}
         </CartContext.Provider>
     )

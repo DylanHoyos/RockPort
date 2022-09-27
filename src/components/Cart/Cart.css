@@ -1,0 +1,14 @@
+.cart-container {
+  display: flex;
+  border-bottom: 1px solid gray;
+  max-width: 1200px;
+  margin: 1rem;
+  padding: 1rem;
+}
+.cart-container img {
+  width: 200px;
+  margin-right: 1rem;
+}
+.item-cart-container {
+  margin-right: 16px;
+}
