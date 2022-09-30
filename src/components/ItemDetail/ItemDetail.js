@@ -20,15 +20,15 @@ const ItemDetail = ({ info }) => {
         <div className='containerdet '>
 
             <div className='containerdet-izq'>
-                <img src={info.img} alt={info.titulo} />
+                <img src={info.image} alt={info.title} />
                 <p className='containerdet-precio'>{info.descripcion}</p>
 
             </div>
 
             <div className='container-detalle'>
-                <h1 className='containerdet-titulo'> {info.titulo}</h1>
+                <h1 className='containerdet-titulo'> {info.title}</h1>
                 <h3 className='containerdet-detalle'> Informacion: {info.detalle}</h3>
-                <p className='containerdet-precio'> Precio: ${info.precio}</p>
+                <p className='containerdet-precio'> Precio: ${info.price}</p>
 
                 <div className="container-detalle-count">
 
