@@ -25,12 +25,7 @@ const ItemListContainer = () => {
 
         } else {
 
-            getDocs(querySnapshot).then((response) => {
-                const data = response.docs.map((prod) => {
-                    return { id: prod.id, ...prod.data() }
-                })
-                setAutos(data);
-            })
+            getDocs(querySnapshot).then((response) => setAutos(response.docs.map(prod => ({ id: prod.id, ...prod.data() }))))
 
         }
 
@@ -51,7 +46,7 @@ const ItemListContainer = () => {
     return (
 
         <div >
-            {/* <h1 className="greeting">{greeting}</h1> */}
+
             <ItemList catalogo={autos} />
 
 

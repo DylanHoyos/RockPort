@@ -2,9 +2,13 @@ import React, { useState } from 'react'
 import { CartContext } from './CartContext'
 const CartProvider = ({ children }) => {
     const [cart, setCart] = useState([]);
+
+
     const addProduct = (info, cantidad) => {
+
         if (isInCart(info.id)) {
             alert('ya existe este producto')
+
             setCart(cart.map(carro => {
                 return carro.id === info.id ? { ...carro, cantidad: carro.cantidad + cantidad } : carro
             }))
@@ -13,11 +17,12 @@ const CartProvider = ({ children }) => {
             setCart([...cart, { ...info, cantidad }])
         }
         console.log('cart:', [...cart, { ...info, cantidad }]);
+        console.log("id:", info.id);
     }
     const clsCart = () => setCart([]);
 
     const isInCart = (id) => {
-        return cart.some((item) => item.id === id)
+        return cart.some((item) => item.id === id);
     }
 
     const removeProduct = (id) => {

@@ -17,9 +17,7 @@ const ItemDetailContainer = () => {
         const queryDoc = doc(db, 'Items', id)
 
         getDoc(queryDoc)
-            .then((res) => {
-                setItemDetail(res.data())
-            })
+            .then((res) => setItemDetail({ id: res.id, ...res.data() }))
     }
 
     useEffect(() => {
