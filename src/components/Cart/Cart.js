@@ -30,8 +30,9 @@ const Cart = () => {
 
                             </div>
                         )
+
                         )}
-                        <p>total: ${precioTotal()}</p>
+                        <p> total: ${precioTotal()}</p>
                     </>
                 )}
 

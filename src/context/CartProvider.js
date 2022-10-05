@@ -30,7 +30,7 @@ const CartProvider = ({ children }) => {
     }
 
     const precioTotal = () => {
-        return (cart.reduce((acu, actual) => acu = acu + actual.precio * actual.cantidad, 0));
+        return (cart.reduce((acu, actual) => acu + (actual.price * actual.cantidad), 0));
 
     }
     const totalAutos = () => {
