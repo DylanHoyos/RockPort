@@ -1,0 +1,62 @@
+.nav-logo {
+  height: 50px;
+  width: 50px;
+  padding: 5px;
+  transition: all 0.4s ease-in;
+}
+.nav-logo:hover {
+  height: 53px;
+  width: 53px;
+
+  background-color: #4985fc;
+  border-radius: 10px;
+}
+.container-logo {
+  height: 50px;
+  width: 75px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-image: url("./logo.png");
+}
+
+.nav-container {
+  margin: 0;
+  padding: 0;
+  height: 80px;
+  background-color: #1966ff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-container-items {
+  display: flex;
+}
+.nav-container-cart {
+  margin: 1rem 1rem 0 0;
+}
+.nav-items {
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+.nav-a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-a :hover {
+  border-bottom: 1px solid #61dafb;
+  color: #61dafb;
+  transition: all 0.4s;
+}
+.linea {
+  width: 100%;
+  height: 0.5px;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}

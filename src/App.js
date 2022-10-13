@@ -8,6 +8,7 @@ import ItemDetailContainer from './pages/ItemDetailContainer/ItemDetailContainer
 import CartWidget from './components/CartWidget/CartWidget';
 import CartProvider from './context/CartProvider';
 import Cart from './components/Cart/Cart';
+import Footer from './components/Footer/Footer';
 
 
 
@@ -25,6 +26,7 @@ function App() {
             <Route path='cart' element={<Cart />} />
           </Routes>
         </div>
+        <Footer />
       </CartProvider>
 
     </BrowserRouter>

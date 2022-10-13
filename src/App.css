@@ -19,13 +19,10 @@ body {
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: aliceblue;
   min-height: 100vh;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -40,41 +37,6 @@ body {
 
 .App-link {
   color: #61dafb;
-}
-.linea {
-  margin: 0;
-  padding: 0;
-  height: 0.5px;
-}
-.nav-logo {
-  height: 65px;
-  width: 65px;
-}
-.nav-container {
-  margin: 0;
-  padding: 0;
-  background-color: #1966ff;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-}
-.nav-items {
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-  padding-left: 2rem;
-}
-
-.nav-a {
-  text-decoration: none;
-  color: #fff;
-}
-
-.nav-a :hover {
-  border-bottom: 1px solid #61dafb;
-  color: #61dafb;
-  transition: all 0.2s;
 }
 
 @keyframes App-logo-spin {
