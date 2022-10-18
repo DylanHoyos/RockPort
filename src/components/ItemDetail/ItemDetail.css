@@ -11,12 +11,10 @@ body {
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 3rem;
-
-  background-color: aliceblue;
-  border-radius: 10px;
-  min-height: 800px;
-  min-width: 65%;
+  background-color: rgb(231, 235, 240);
+  border-radius: 5px;
+  min-height: 100vh;
+  width: 1500px;
 }
 
 .containerdet img {
@@ -27,21 +25,20 @@ body {
 .containerdet-izq {
   align-items: center;
   display: flex;
+  margin-left: 1.5rem;
   flex-direction: column;
-  width: 800px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
 }
-.linea {
-  width: 600px;
-  background-color: rgba(0, 0, 0, 0.572);
-  border: none;
-}
+
 .containerdet-p {
   padding: 1rem;
   width: 200px;
-  font-size: 20px;
+  font-size: 12px;
 }
 .boton-detalle {
-  background-color: rgb(66, 66, 255);
+  background-color: rgb(209, 209, 234);
   color: white;
   border: none;
   width: 150px;
@@ -65,22 +62,29 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 800px;
-  min-height: 400px;
+  width: 500px;
+  height: 500px;
   margin: 4rem;
   padding: 2rem;
-  background-color: rgba(240, 253, 255, 0.799);
+  background-color: rgba(255, 255, 255, 0.799);
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.612);
-  border-radius: 15px;
+  border-radius: 5px;
 }
 .containerdet-titulo {
   font-style: italic;
-  font-size: 50px;
-  padding-bottom: 90px;
+  font-size: 45px;
+  padding: 10px;
+  background-color: aliceblue;
+  box-shadow: 15px 3px 12px rgba(0, 0, 0, 0.612);
 }
+
 .containerdet-precio {
-  font-size: 30px;
+  font-size: 18px;
 }
 .containerdet-detalle {
-  font-size: 40px;
+  font-size: 22px;
+}
+
+.linea-det {
+  width: 100%;
 }

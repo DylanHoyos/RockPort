@@ -24,7 +24,7 @@ const Cart = () => {
         const db = getFirestore();
         const ordersCollection = collection(db, 'ordenes-de-compra');
         addDoc(ordersCollection, order)
-            .then(({ id }) => console.log(id));
+            .then(({ id }) => alert(`su codigo es de seguimiento es: " ${id}"`));
 
     }
 
@@ -38,24 +38,25 @@ const Cart = () => {
                         <Link to={'/'} > Volver a comprar</Link>
                     </>)
                 : (
-                    <>
+                    <div className='cart-main'>
                         {cart.map(auto => (
                             <div className='cart-container' key={auto.id} >
 
                                 <img src={auto.image} />
                                 <h3 className='item-cart-container'>{auto.title}</h3>
-                                <p className='item-cart-container'> ${auto.price}</p>
-                                <p className='item-cart-container'> cantidad: {auto.cantidad}</p>
-                                <p className='item-cart-container'> id: {auto.id}</p>
-                                <button onClick={() => removeProduct(auto.id)}>delete</button>
+                                <p className='item-cart-container'> Precio: ${auto.price}</p>
+                                <p className='item-cart-container'> Cantidad: {auto.cantidad}</p>
+                                <p className='item-cart-container'> Id: {auto.id}</p>
+                                <button onClick={() => removeProduct(auto.id)} className='item-cart-button-delete'>Eliminar</button>
 
                             </div>
                         )
 
                         )}
-                        <p> total: ${precioTotal()}</p>
-                        <button onClick={terminarCompra}>Terminar Compra</button>
-                    </>
+
+                        <p className='item-cart-container-total'> Total: ${precioTotal()}</p>
+                        <button onClick={terminarCompra} className='terminarcompra'>Terminar Compra</button>
+                    </div>
                 )}
 
         </div>

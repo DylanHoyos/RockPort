@@ -18,7 +18,7 @@ const ItemDetail = ({ info }) => {
 
     return (
         <div className='containerdet '>
-
+            <h1 className='containerdet-titulo'> {info.title}</h1>
             <div className='containerdet-izq'>
                 <img src={info.image} alt={info.title} />
                 <p className='containerdet-precio'>{info.descripcion}</p>
@@ -26,8 +26,8 @@ const ItemDetail = ({ info }) => {
             </div>
 
             <div className='container-detalle'>
-                <h1 className='containerdet-titulo'> {info.title}</h1>
-                <h3 className='containerdet-detalle'> Informacion: {info.detalle}</h3>
+
+                <h3 className='containerdet-detalle'> Potencia: {info.detalle}</h3>
                 <p className='containerdet-precio'> Precio: ${info.price}</p>
 
                 <div className="container-detalle-count">
@@ -35,7 +35,7 @@ const ItemDetail = ({ info }) => {
                     <ItemCount initial={initial} stock={5} onAdd={onAdd} contador={contador} setContador={setContador} />
                 </div>
 
-                <hr className='linea'></hr>
+                <hr className='linea-det'></hr>
 
                 <div className='containerdet-footer'>
                     <p className='containerdet-p'> Id: {info.id}</p>
