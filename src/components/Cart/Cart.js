@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import { CartContext } from '../../context/CartContext'
 import { Link } from 'react-router-dom';
 import { getFirestore, addDoc, collection } from 'firebase/firestore';
@@ -9,16 +9,16 @@ const Cart = () => {
     const { cart, removeProduct, precioTotal } = useContext(CartContext);
     console.log('Acart', cart);
 
-    const order = {
+    const [order, setOrder] = useState({
         buyer: {
-            name: 'Carlos',
-            email: 'carlosmar@gmail.com',
-            phone: '152535253',
-            adress: 'dasdas 3232'
+            name: '',
+            email: '',
+            phone: 0,
+            adress: ''
         },
         items: cart.map(prod => ({ id: prod.id, title: prod.title, price: prod.price, cantidad: prod.cantidad })),
         total: precioTotal(),
-    }
+    });
 
     const terminarCompra = () => {
         const db = getFirestore();
@@ -27,6 +27,16 @@ const Cart = () => {
             .then(({ id }) => alert(`su codigo es de seguimiento es: " ${id}"`));
 
     }
+    const handleInputChange = (e) => {
+        setOrder({
+            ...order,
+            buyer: {
+                ...order.buyer,
+                [e.target.name]: e.target.value,
+            },
+        });
+
+    };
 
     return (
         <div >
@@ -34,8 +44,8 @@ const Cart = () => {
             {cart.length === 0
                 ? (
                     <>
-                        No hay productos
-                        <Link to={'/'} > Volver a comprar</Link>
+
+                        <Link to={'/'} className='volver' > Haga click para volver a comprar</Link>
                     </>)
                 : (
                     <div className='cart-main'>
@@ -53,7 +63,25 @@ const Cart = () => {
                         )
 
                         )}
-
+                        <h1 className='formu-section-title'>Complete el formulario para terminar la compra</h1>
+                        <form className='formu'>
+                            <div className='formu-section'>
+                                <label className='formu-section-title'>Nombre</label>
+                                <input className='formu-section-input' name='name' type='text' value={order.buyer.name} onChange={handleInputChange} />
+                            </div>
+                            <div className='formu-section'>
+                                <label className='formu-section-title'>Email</label>
+                                <input className='formu-section-input' name='email' type='email' value={order.buyer.email} onChange={handleInputChange} />
+                            </div>
+                            <div className='formu-section'>
+                                <label className='formu-section-title'>Numero telefonico</label>
+                                <input className='formu-section-input' name='phone' type='number' value={order.buyer.phone} onChange={handleInputChange} />
+                            </div>
+                            <div className='formu-section'>
+                                <label className='formu-section-title'>Direccion</label>
+                                <input className='formu-section-input' name='adress' type='text' value={order.buyer.adress} onChange={handleInputChange} />
+                            </div>
+                        </form>
                         <p className='item-cart-container-total'> Total: ${precioTotal()}</p>
                         <button onClick={terminarCompra} className='terminarcompra'>Terminar Compra</button>
                     </div>
