@@ -1,3 +1,26 @@
+## Autor
+
+Este proyecto fue creado por [Dylan Hoyos](https://www.linkedin.com/in/dylanhoyos/)
+Contacto: dylanehs@hotmail.com
+
+## Gif recorrido de compra
+
+## Librerias usadas en este proyecto
+
+ReactJs
+
+### JavaScript framework
+
+Create React App
+
+### Create React Proyect
+
+Firebase
+
+### Authentication & DataBase
+
+React Router
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
