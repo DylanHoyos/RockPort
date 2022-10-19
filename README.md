@@ -9,19 +9,19 @@ Contacto: dylanehs@hotmail.com
 
 ## Librerias usadas en este proyecto
 
-(ReactJs)[https://reactjs.org/]
+[ReactJs](https://reactjs.org/)
 
 ### JavaScript framework
 
-(Create React App)[https://create-react-app.dev/] 
+[Create React App](https://create-react-app.dev/)
 
 ### Create React Proyect
 
-(Firebase)[https://firebase.google.com/]
+[Firebase](https://firebase.google.com/)
 
 ### Authentication & DataBase
 
-(React Router)[https://reactrouter.com/en/main]
+[React Router](https://reactrouter.com/en/main)
 
 # Getting Started with Create React App
 
