@@ -7,7 +7,7 @@ import './Cart.css';
 
 const Cart = () => {
     const { cart, removeProduct, precioTotal } = useContext(CartContext);
-    console.log('Acart', cart);
+
 
     const [order, setOrder] = useState({
         buyer: {

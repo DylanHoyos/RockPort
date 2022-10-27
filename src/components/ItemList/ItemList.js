@@ -1,7 +1,7 @@
 import Item from "../Item/Item";
 
 const ItemList = ({ catalogo }) => {
-    // console.log(catalogo);
+
     return (
         <>
             {

@@ -11,7 +11,7 @@ const ItemDetail = ({ info }) => {
     const [contador, setContador] = useState(initial);
 
     const onAdd = (cantidad) => {
-        console.log(`se agrego al carrito, cantidad: ${cantidad}`);
+
         addProduct(info, cantidad)
     }
 

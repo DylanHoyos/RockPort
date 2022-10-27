@@ -16,8 +16,7 @@ const CartProvider = ({ children }) => {
         } else {
             setCart([...cart, { ...info, cantidad }])
         }
-        console.log('cart:', [...cart, { ...info, cantidad }]);
-        console.log("id:", info.id);
+
     }
     const clsCart = () => setCart([]);
 
