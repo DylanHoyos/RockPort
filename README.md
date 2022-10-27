@@ -4,22 +4,24 @@ Este proyecto fue creado por [Dylan Hoyos](https://www.linkedin.com/in/dylanhoyo
 Contacto: dylanehs@hotmail.com
 
 ## Gif recorrido de compra
+![Gif compra](https://user-images.githubusercontent.com/91636211/196573199-533cce7c-6552-46e6-909c-20a964b8ecad.gif)
+
 
 ## Librerias usadas en este proyecto
 
-ReactJs
+[ReactJs](https://reactjs.org/)
 
 ### JavaScript framework
 
-Create React App
+[Create React App](https://create-react-app.dev/)
 
 ### Create React Proyect
 
-Firebase
+[Firebase](https://firebase.google.com/)
 
 ### Authentication & DataBase
 
-React Router
+[React Router](https://reactrouter.com/en/main)
 
 # Getting Started with Create React App
 
